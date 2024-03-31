@@ -1,0 +1,133 @@
+body{
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    overflow: hidden;
+    background-image: url('./imagen/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login{
+    width: 320px;
+    height: 475px;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+
+    font-family: Arial, sans-serif;
+    background: rgba(161, 173, 201, 0.63);
+    backdrop-filter: blur(5px);
+    color: #f8f8f8;
+    border-radius: 50px;
+    border: solid 3px black;
+}
+
+.box{ 
+    .logo, .logo2{
+        width: 140px; 
+        height: 170px;
+        position: absolute;
+        top: -15%;
+        left: 90px;
+
+        &.logo:hover{
+            display: none;
+        }
+    }
+
+    input{
+        width: 70%;
+        height: 30px;
+        left: 15%;
+        border: none;
+        position: absolute;
+        border-bottom: 2px solid #000000; 
+        background: transparent; 
+        outline: none;
+        color: #000000; 
+        font-size: 16px;
+        transition: border-bottom-color 0.3s;
+
+        &:focus{
+            border-bottom-color: #007bff; 
+        }
+    }
+
+    .txtUsuario{
+        top: 30%;
+    }
+    .txtContrasenia{
+        top: 50%;
+    }
+
+    .usuario{
+        width: 30px; 
+        height: 30px;
+        position: absolute;
+        top: 31%;
+        left: 4%;
+    }
+    .contrasenia{
+        width: 30px; 
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 4%;
+    }
+
+    .btnIngresar{
+        height: 40px;
+        width: 75%;
+        position: absolute;
+        top: 65%;
+        left: 12.5%;
+        background: #ffffff3f;
+        color: #000000;
+        font-size: 18px;
+        transition: 0.2s;
+        border: solid 3px black;
+        border-radius: 50px;
+
+        &:hover{
+            color: #ffffff;
+            background: #000000;
+            border: none;
+        }
+    }
+
+    .visual{
+        position: absolute;
+        width: 25px; 
+        height: 25px;
+        top: 51%;
+        right: 13%;
+        opacity: 0.5;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.mensaje{
+    color: rgba(175, 7, 7, 0.993);
+    opacity: 1;
+    animation: desaparecer 5s forwards;
+    text-align: start;
+    font-weight: bold;
+    position: absolute;
+    top: 80%;
+    left: 24%;
+}    
+@keyframes desaparecer{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

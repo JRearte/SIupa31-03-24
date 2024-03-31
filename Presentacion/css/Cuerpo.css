@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(to top, #294D61,#6DA5C0,#0F969C,#0C7078,#072E33,#05161A);
+    position: relative;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+}
+
+/***************************************/
+.menú{
+    filter: invert(100%);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -34px;
+    left: 10px;
+}
+
+.menú_barra{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 5%;
+    height: 9%;
+    top: 42px;
+    position: fixed;
+    transition: .4s all;
+    z-index: 1;
+}
+
+.menú_barra ul{
+    padding: 0px;
+    text-align: center;
+}
+
+.menú_barra li{
+    transition: .3s all;
+}
+
+.menú_barra a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.menú_barra h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+
+.menú_barra:hover{
+    width: 20%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.144);
+    color: white;
+    backdrop-filter: blur(50px);
+}
+
+.menú_barra:hover h2{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.menú_barra:hover a{
+    font-size: 13px;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.menú_barra:hover a:hover{
+    font-size: 17px;
+    padding: 20px 0px;
+    background: rgb(0, 255, 191);
+    color: rgb(0, 0, 0);
+}
+
+.menú_barra:hover li{
+    border-top: 1px solid rgb(0, 255, 191);
+    width: 100%;
+}
+
+.menú_barra:hover ul:last-of-type{
+    border-bottom: 1px solid rgb(0, 255, 191);
+}
+
+/************************************/
+

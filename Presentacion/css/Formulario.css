@@ -1,0 +1,180 @@
+#agregar{
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    position: absolute;
+    background: rgba(179, 255, 0, 0);
+    backdrop-filter: blur(50%);
+    border-radius: 20px;
+}
+
+#agregar form{
+    position: relative;
+    top: 10%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0.479);
+    backdrop-filter: blur(50%);
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#agregar label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+#agregar input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+#agregar select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#agregar button{
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#agregar .btn-Cancelar{
+    background-color: #ce2424;
+    color: #fff;    
+}
+
+#agregar .btn-Cancelar:hover{
+    background-color: #ff0000;
+}
+
+#agregar .btn-Guardar{
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#agregar .btn-Guardar:hover{
+    background-color: #41eb82;
+}
+
+#agregar .btn-Guardar[disabled]
+{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/** PARTE DEL JAVA SCRIPT VALIDACIóN **/
+
+#agregar .mensaje{
+    position: absolute;
+    top: 110px;
+    left: 65%;
+}
+
+#modificar .mensaje{
+    position: absolute;
+    top: 110px;
+    left: 65%;
+}
+
+
+@media (max-width: 600px) {
+    #agregar .mensaje{
+        position: absolute;
+        top: 80px;
+        left: 35%;
+    }
+    #modificar .mensaje{
+        position: absolute;
+        top: 80px;
+        left: 35%;
+    }
+}
+
+/***************Formulario Modificar************/
+
+#modificar{
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    position: absolute;
+    background: rgba(179, 255, 0, 0);
+    backdrop-filter: blur(50%);
+    border-radius: 20px;
+}
+
+#modificar form{
+    position: relative;
+    top: 10%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0.479);
+    backdrop-filter: blur(50%);
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#modificar label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+#modificar input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+#modificar select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#modificar button{
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#modificar .btn-Cancelar{
+    background-color: #ce2424;
+    color: #fff;    
+}
+
+#modificar .btn-Cancelar:hover{
+    background-color: #ff0000;
+}
+
+#modificar .btn-Actualizar{
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#modificar .btn-Actualizar:hover{
+    background-color: #41eb82;
+}
+
+#modificar .btn-Actualizar[disabled]
+{
+    opacity: 0.6;
+    cursor: not-allowed;
+}

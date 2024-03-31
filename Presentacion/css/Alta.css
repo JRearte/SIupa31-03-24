@@ -1,0 +1,183 @@
+body{
+    height: 100vh;
+    background: #4a6fa1;
+    position: relative;
+    overflow: hidden;
+}
+
+#agregar {
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    position: absolute;
+    background: rgba(194, 173, 167, 0.281);
+    backdrop-filter: blur(50%);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+
+#agregar #tutor{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0);
+}
+
+#agregar #domicilio{
+    position: absolute;
+    top: 2%;
+    left: 34.5%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0);
+}
+
+#agregar #trabajador{
+    position: absolute;
+    top: 2%;
+    left: 67%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0);
+}
+
+#agregar #alumno{
+    position: absolute;
+    top: 2%;
+    left: 67%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0);
+}
+
+@media screen and (max-width: 768px){
+    body{
+        height: 100vh;
+        background: #4a6fa1;
+        overflow: visible;
+    }
+    
+    #agregar {
+        width: 95%;
+        height: 1250px;
+        left: 2.5%;
+        top: 2.5%;
+        position: absolute;
+        background: rgba(194, 173, 167, 0.281);
+        backdrop-filter: blur(50%);
+        border: 2px solid #ddd;
+        border-radius: 10px;
+    }
+
+    #agregar #tutor{
+        position: relative;
+        top: 2%;
+        left: 0;
+        width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(128, 128, 128, 0);
+    }
+    
+    #agregar #domicilio{
+        position: relative;
+        top: 2%;
+        left: 0;
+        width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(128, 128, 128, 0);
+    }
+    
+    #agregar #trabajador{
+        position: relative;
+        top: 2%;
+        left: 0;
+        width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(128, 128, 128, 0);
+    }
+
+    #agregar #alumno{
+        position: relative;
+        top: 2%;
+        left: 0;
+        width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(128, 128, 128, 0);
+    }
+}
+
+
+
+#agregar label{
+    display: block;
+    margin-bottom: 1px;
+}
+
+
+#agregar input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    box-shadow:  inset 2px 2px 5px black, inset -5px -5px 10px white;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    &:focus {
+        box-shadow:  inset 1px 1px 2px black, inset -1px -1px 2px white;
+    }
+}
+
+
+#agregar select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#agregar button{
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#agregar #btnCancelar{
+    background-color: #ce2424;
+    color: #fff;
+    position: relative;
+    left: 30%;
+}
+
+#agregar #btnCancelar:hover{
+    background-color: #ff0000;
+}
+
+#agregar #btnGuardar{
+    background-color: #4CAF50;
+    color: #fff;
+    position: relative;
+    left: 10%;
+}
+
+#agregar #btnGuardar:hover{
+    background-color: #41eb82;
+}
+
